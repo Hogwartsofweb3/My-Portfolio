@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info span {
+            margin: 0 15px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        
+        .summary {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-size: 14px;
+            color: #34495e;
+            margin-bottom: 3px;
+        }
+        
+        .date-location {
+            font-size: 13px;
+            color: #7f8c8d;
+            text-align: right;
+            font-style: italic;
+        }
+        
+        .job-description {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-left: 0;
+        }
+        
+        .job-description li {
+            margin-bottom: 6px;
+            list-style-type: disc;
+            margin-left: 18px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            font-size: 13px;
+        }
+        
+        .skills-grid li {
+            list-style-type: disc;
+            margin-left: 18px;
+        }
+        
+        .tags {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .certification {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .cert-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .cert-org {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                padding: 0.5in;
+                font-size: 12px;
+            }
+            
+            .section {
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            
+            .job {
+                break-inside: avoid;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">LUCHRISMICHAEL</div>
+        <div class="contact-info">
+            <span>meldiablo23@gmail.com</span>
+            <span>@angrypacifist</span>
+            <span>@angry__pacifist</span>
+            <span>angrypacifist</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+            Community and Content Leader with 4+ years of experience building and scaling vibrant communities within the Solana ecosystem. Proven ability to drive engagement through strategic content, develop distinct brand voices, and translate complex technical concepts for a broad audience. A recognized leader dedicated to fostering talent and creating opportunities for creators.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Writer & Community Strategist</div>
+                    <div class="company">OUTIS</div>
+                </div>
+                <div class="date-location">September 2024 - Present</div>
+            </div>
+            <ul class="job-description">
+                <li>Cultivated the guild into the premier hub for Solana writers in the region</li>
+                <li>Created pathways for members to access earning opportunities</li>
+                <li>Acted as a key content contributor for the ecosystem</li>
+                <li>Maintained high engagement during a period of widespread community restructuring</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Writer's Guild Lead</div>
+                    <div class="company">Superteam Nigeria</div>
+                </div>
+                <div class="date-location">January 2024 - Present</div>
+            </div>
+            <ul class="job-description">
+                <li>Managed community members on WhatsApp platform, ensuring consistent communication flow and keeping members updated with information from national-level Superteam operations</li>
+                <li>Mentored community members in developing stronger writing skills and guided their participation in ecosystem contributions through Superteam</li>
+                <li>Moderated regular community calls, curated and shared educational resources for writing skill development</li>
+                <li>Connected members to relevant learning opportunities and earning prospects within the blockchain writing space</li>
+            </ul>
+            <div class="tags">Community Management | Mentorship | Content Strategy | Resource Curation | Call Moderation | Opportunity Development</div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Social Media & Community Manager</div>
+                    <div class="company">Little Unusual</div>
+                </div>
+                <div class="date-location">August 2024 - Present</div>
+            </div>
+            <ul class="job-description">
+                <li>Grew the company's primary Twitter (X) audience by over 380% through a consistent content and engagement strategy</li>
+                <li>Launched and managed the official community for the Solana Global Creator Competition (SGCC)</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Social Media Manager</div>
+                    <div class="company">Stable.fun</div>
+                </div>
+                <div class="date-location">May 2024 - Present</div>
+            </div>
+            <ul class="job-description">
+                <li>Developed and executed comprehensive social media content strategy to drive brand awareness and user engagement</li>
+                <li>Created, curated, and published daily content aligned with brand voice and marketing objectives</li>
+                <li>Managed end-to-end social media operations including content planning and performance analytics</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Freelance Contributor & Bounty Hunter</div>
+                    <div class="company">Superteam Earn</div>
+                </div>
+                <div class="date-location">2023 - Present</div>
+            </div>
+            <ul class="job-description">
+                <li>Authored over 70 writing submissions, including deep dives and threads that led directly to recruitment for leadership roles at SuperteamNG, Token Metrics, and Stable.fun</li>
+                <li>Specialized in creating targeted content that simplifies complex blockchain concepts for diverse audiences</li>
+                <li>Participated in 3 hackathons, contributing technical writing and content strategy expertise to development teams</li>
+                <li>Established reputation as a top-tier writer by winning 8 high-value bounties</li>
+            </ul>
+            <div class="tags">Technical Writing | Article Writing | Content Strategy | Solana | Research | Token Analysis | Data Analysis</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <ul class="skills-grid">
+            <li>Community Growth Strategy</li>
+            <li>Content Strategy & Marketing</li>
+            <li>Partnerships & Business Development</li>
+            <li>Technical Writing</li>
+            <li>Social Media Strategy</li>
+            <li>Brand Voice Development</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="certification">
+            <div>
+                <span class="cert-name">Certified Community Manager</span>
+                <span class="cert-org">Web3Versity</span>
+            </div>
+            <div class="date-location">2024</div>
+        </div>
+    </div>
+</body>
+</html>
